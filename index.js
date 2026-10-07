@@ -459,7 +459,6 @@ function numPointsScored(playerName) {
     if (game.away.players[playerName]) {
         return game.away.players[playerName].points;
     }
-}
 
 
 function shoeSize(playerName) {
@@ -633,4 +632,5 @@ function doesLongNameStealATon() {
     });
 
     return longestName === playerWithMostSteals;
+}
 }
