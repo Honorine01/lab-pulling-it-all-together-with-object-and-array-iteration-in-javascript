@@ -438,8 +438,17 @@ function gameObject() {
     };
 
 }
+function numPointsScored(playerName) {
+    const game = gameObject();
 
+    if (game.home.players[playerName]) {
+        return game.home.players[playerName].points;
+    }
 
+    if (game.away.players[playerName]) {
+        return game.away.players[playerName].points;
+    }
+}
 function numPointsScored(playerName) {
     const game = gameObject();
 
